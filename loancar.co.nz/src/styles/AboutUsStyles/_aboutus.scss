@@ -1,0 +1,35 @@
+@use "../global" as *;
+
+.about-us {
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 5rem;
+
+    .about-us-title {
+      font-size: $h4-size;
+      font-family: $text-font;
+      font-weight: 500;
+      margin-bottom: 1.4rem; // Adding margin here instead of h4 element itself
+    }
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      color: $text-gray;
+      line-height: 1.4;
+      padding: 5rem;
+    }
+
+    li {
+      font-size: $p-size;
+      font-family: $text-font;
+      color: $text-gray;
+      line-height: 1.4;
+      text-align: left;
+    }
+  }
+}
