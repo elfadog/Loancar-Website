@@ -38,8 +38,14 @@ function Hero() {
               our expert experience
             </p>
             <p>
-              We operate in the wider Auckland area only. We do not currently
-              operate outside Auckland{" "}
+              If you are involved in an accident, where you are not at fault, we
+              can provide you with a replacement car immediately and at no cost
+              to you. If you are at fault, we can provide you a courtesy
+              vehicle, subject to the terms and conditions of your insurance
+              policy.
+            </p>
+            <p>
+              Call <a href="tel:0275626227">027 LOAN CAR</a> (027 5626 227)
             </p>
             <div className="hero-content__text__btns">
               <Link

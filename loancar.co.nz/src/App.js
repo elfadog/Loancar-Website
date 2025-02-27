@@ -1,35 +1,3 @@
-// import "../src/dist/styles.css";
-// import HowItWorks from "./Pages/HowItWorks";
-// import Home from "./Pages/Home";
-// import Navbar from "../src/components/Navbar";
-// import { Route, Routes } from "react-router-dom";
-// import { AnimatePresence, motion } from "framer-motion";
-// import PrivacyPolicy from "./Pages/PrivacyPolicy";
-// import AboutUs from "./Pages/AboutUs";
-// import Contact from "./Pages/Contact";
-// import Faq from "./components/Faq";
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <AnimatePresence>
-//         <Routes>
-//           <Route index path="/" element={<Home />} />
-//           <Route path="Home" element={<Home />} />
-//           <Route path="How-It-Works" element={<HowItWorks />} />
-//           <Route path="Privacy-Policy" element={<PrivacyPolicy />} />
-//           <Route path="About-Us" element={<AboutUs />} />
-//           <Route path="Contact" element={<Contact />} />
-//           <Route path="Home#FAQ" element={<Faq />} />
-//         </Routes>
-//       </AnimatePresence>
-//     </>
-//   );
-// }
-
-// export default App;
-
 import "../src/dist/styles.css";
 import HowItWorks from "./Pages/HowItWorks";
 import Home from "./Pages/Home";

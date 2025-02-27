@@ -1,42 +1,4 @@
-// import React, { useEffect } from "react";
-// import Hero from "../components/Hero";
-// import ContactForm from "../components/Contact Form";
-// import PlanTrip from "../components/PlanTrip";
-// import Faq from "../components/Faq";
-// import Footer from "../components/Footer";
-
-// function Home() {
-//   useEffect(() => {
-//     const scrollToFAQ = () => {
-//       const faqSection = document.querySelector(".faq-box");
-//       if (faqSection) {
-//         faqSection.scrollIntoView({ behavior: "smooth" });
-//       }
-//     };
-
-//     // Scroll to the first FAQ section when the component mounts
-//     scrollToFAQ();
-
-//     // Clean up function to remove event listener
-//     return () => {
-//       window.removeEventListener("scroll", scrollToFAQ);
-//     };
-//   }, []);
-
-//   return (
-//     <>
-//       <Hero />
-//       <ContactForm />
-//       <PlanTrip />
-//       <Faq />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default Home;
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import ContactForm from "../components/Contact Form";
 import PlanTrip from "../components/PlanTrip";
@@ -44,7 +6,12 @@ import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 
 function Home() {
+  //smooth load
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
+    setLoaded(true); // Set loaded to true when the component mounts
+
     const scrollToFAQ = () => {
       const faqSection = document.querySelector(".faq-section");
       if (faqSection) {
@@ -67,13 +34,15 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <div
+      className={`page-transition ${loaded ? "page-transition-active" : ""}`}
+    >
       <Hero />
       <ContactForm />
       <PlanTrip />
       <Faq />
       <Footer />
-    </>
+    </div>
   );
 }
 
