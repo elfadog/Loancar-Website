@@ -2,5 +2,5 @@ deployment:
   tasks:
     - export NODE_VERSION=23 # Use your Node.js version
     - /opt/cpanel/ea-nodejs23/bin/npm install # Install dependencies
-    - /opt/cpanel/ea-nodejs23/bin/npm run build # Build the project
-    - /bin/cp -R * build/* ../public_html/ # Deploy to public_html folder
+    - /opt/cpanel/ea-nodejs23/bin/npm run build # Build React project
+    - /bin/rsync -av --delete build/ ../public_html/ # Sync only the build folder to public_html
