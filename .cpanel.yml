@@ -4,4 +4,4 @@ deployment:
     - export DEPLYPATH=/home/loanc306/public_html
     - /opt/cpanel/ea-nodejs23/bin/npm install
     - /opt/cpanel/ea-nodejs23/bin/npm run build
-    - /bin/rsync -av --delete build/ $DEPLOYPATH
+    - /bin/rsync -av build/ $DEPLOYPATH
